@@ -1,18 +1,29 @@
-#include "main.h"
 #include <stdio.h>
-/*
- * Este programa multiplica dos números
- * Return: 0 if succeed
- */
-int main(void)
+int main()
 {
-    int resultado = 0;
-    int n1=0;
-    int n2=0;
-
-    /*Aquí va tu código*/
-
-    resultado = mul(n1,n2);
-    printf("El resultado de la multiplicacion es: %d\n",resultado);
-    return 0;
+    int i, j=0, columnas=0, incremento = 1;
+    printf("Ingrese el número de columnas:\n");
+    scanf("%d",&columnas);
+    for ( i = 0; i < columnas; i++)
+    {  
+    
+        for ( j = 0; j <= i; j++)
+        {
+            printf("*");
+            
+        }
+         printf("\n");
+    }
+    i--;
+    for ( i = i; i > 0; i--)
+    {  
+    
+        for ( j = i; j > 0; j--)
+        {
+            printf("*");
+            
+        }
+         printf("\n");
+    }
+    return (0);
 }

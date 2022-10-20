@@ -1,19 +1,36 @@
-#include "main.h"
 #include <stdio.h>
-/**
- * Este programa calcula el
- * módulo de un número
- * Return: 0 if succeed
- */
-int main(void)
+int main()
 {
-    int resultado = 0;
-    int n1=0;
-    int n2=0;
-
-    /*Aquí va tu código*/
+    int i=0, j=0, k=0,columnas, dif=0;
+    printf("Ingrese el número de columnas:\n");
+    scanf("%d",&columnas);
+    dif = columnas * 2;
+   for ( i = 1; i < dif; i++)
+   {
+    if (i!=columnas)
+    {
+    for ( j = 0; j < dif; j++)
+    {
+        if(j != columnas){
+        printf(" ");
+        }
+        else
+        {
+        printf("+");
+        };
+    }
+   }
+   else
+   {
+    for ( k = -1; k < dif; k++)
+    {
+        printf("+");
+    }
     
-    resultado = mod(n1,n2);
-    printf("El módulo %d de %d es: %d\n",n1,n2,resultado);
-    return 0;
+   }
+    
+    printf("\n");
+   }
+
+   
 }

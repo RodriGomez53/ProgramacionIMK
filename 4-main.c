@@ -1,22 +1,26 @@
-#include "main.h"
 #include <stdio.h>
-/**
- * Este programa resta dos numeros
- * Return: 0 if succeed
- */
-int main(void)
+
+int main()
 {
-    int res=0;
-    int n1=0;
-    int n2=0;
-
-    printf("Ingrese un numero:\n");
-    scanf("%d",&n1);
-    
-    printf("Ingrese un numero:\n");
-    scanf("%d",&n2);
-
-    res = resta(n1,n2);
-    printf("El valor de la resta es: %d\n",res);
-    return 0;
+    int i, j, filas, columnas;
+    printf("Ingrese el número de filas:\n");
+    scanf("%d",&filas);
+    printf("Ingrese el número de columnas:\n");
+    scanf("%d",&columnas);
+    for ( i = 1; i <= filas; i++)
+    {
+        for ( j = 1; j <= columnas; j++)
+        {
+            if(i == 1 || i == filas || j == 1 || j == columnas || i == j || i == ((filas - j) + 1) )
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    return (0);
 }

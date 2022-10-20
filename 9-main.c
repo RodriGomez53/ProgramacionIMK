@@ -10,13 +10,15 @@ int main()
    {
   for (j = 0; j < dif; j++)
   {
-    if (j < diagonales - i || j >= diagonales + i)
+   
+    if (j <= diagonales - i || j >= diagonales + i)
     {
-      printf("*");
+      printf(" ");
 
     }
-    else{
-      printf(" ");
+    else
+    {
+      printf("*");
     }
   }
   printf("\n");
@@ -26,13 +28,13 @@ int main()
    {
   for (j = dif; j > 0; j--)
   {
-    if (j <= (diagonales - i) +1|| j >= diagonales + i)
+    if (j <= (diagonales - i) || j >= (diagonales + i))
     {
-      printf("*");
+      printf(" ");
 
     }
     else{
-      printf(" ");
+      printf("*");
     }
   }
   printf("\n");

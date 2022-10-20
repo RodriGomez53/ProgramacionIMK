@@ -1,13 +1,19 @@
-#include <stdio.h> 
-/**
- * Este programa suma dos numeros
- * Return: 0 if succeed
- */
-int main() 
-{ 
-  int numero;
-  printf("Ingrese un numero: \n"); 
-  scanf("%d", &numero); 
-  printf("Usted ha escrito el numero: %d\n", numero); 
-  return 0; 
-} 
+#include <stdio.h>
+
+int main()
+{
+    int i, j, filas, columnas;
+    printf("Ingrese el número de filas:\n");
+    scanf("%d",&filas);
+    printf("Ingrese el número de columnas:\n");
+    scanf("%d",&columnas);
+    for ( i = 0; i < filas; i++)
+    {
+        for ( j = 0; j < columnas; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return (0);
+}
